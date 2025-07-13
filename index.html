@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudhanshu Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Redirect handler from 404 fallback -->
+    <script>
+      const redirect = sessionStorage.redirect;
+      if (redirect) {
+        history.replaceState(null, null, redirect);
+        sessionStorage.removeItem("redirect");
+      }
+    </script>
+    <!-- DO NOT manually import index.js here -->
+  </body>
+</html>

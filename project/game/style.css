@@ -1,0 +1,23 @@
+/* /project/game/style.css */
+body {
+  background: radial-gradient(circle, #222, #111);
+  color: #fff;
+  font-family: 'Arial';
+  text-align: center;
+  padding-top: 100px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

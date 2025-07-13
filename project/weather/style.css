@@ -1,0 +1,42 @@
+/* /project/weather/style.css */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-box {
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.weather-box input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.weather-box button {
+  padding: 10px 20px;
+  background: #4dd0e1;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #eee;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Runner Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <div id="character"></div>
+    <div id="obstacle"></div>
+    <div id="score">Score: 0</div>
+
+    <div class="menu">
+      <label>Difficulty:
+        <select id="difficulty">
+          <option value="3000">Easy</option>
+          <option value="2000" selected>Medium</option>
+          <option value="1200">Hard</option>
+        </select>
+      </label>
+      <button id="restart">🔁 Restart</button>
+    </div>
+  </div>
+
+  <audio id="jumpSound" src="jump.wav" preload="auto"></audio>
+  <audio id="failSound" src="fail.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mock Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ Offline Weather</h1>
+    <select id="citySelect" onchange="getWeather()">
+      <option value="">Select a city</option>
+      <option value="pune">Pune</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="delhi">Delhi</option>
+      <option value="newyork">New York</option>
+      <option value="tokyo">Tokyo</option>
+    </select>
+
+    <div id="weatherBox" class="weather-box">
+      <p class="info">Choose a city to view weather.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
